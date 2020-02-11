@@ -1,0 +1,134 @@
+{
+	"SCARIF BEACH": {
+		"name": "Scarif Beach",
+		"desc": "This is abeach head with a direct view of the Citadel Tower",
+		"exits": [{
+			"exit": "NORTH",
+			"target": "CITADEL TOWER"
+		    }
+        ]
+	},
+	"CITADEL TOWER": {
+		"name": "Citadel Tower",
+		"desc": "You are in the Citadel Tower facing a door. This Tower contains the Emperial data base",
+		"exits": [{
+			"exit": "EAST",
+			"target": "CORRIDOR"
+		}, {
+			"exit": "WEST",
+			"target": "TRASH COMPACTOR"
+		}],
+		"items": []
+	},
+	"CORRIDOR": {
+		"name": "Corridor inside the tower",
+		"desc": "This corridor appears to be blocked off by Emperial Special Forces, you must fiend another way.",
+		"exits": [{
+			"exit": "NORTH",
+			"target": "DEAD END 1"
+		}, {
+			"exit": "EAST",
+			"target": "BRIDGE"
+		}],
+			"items": []
+	},
+	"TRASH COMPACTOR": {
+		"name": "Trah Compactor",
+		"desc": "Compactor is under the Tower",
+		"exits": [{
+			"exit": "NORTH",
+			"target": "STAIRS"
+		}],
+			"items": []
+	},
+	"STAIRS": {
+		"name": "Stairs",
+		"desc": "Stairs lead out from Compactor",
+		"exits": [{
+			"exit": "UP",
+			"target": "CITADEL TOWER"
+		}],
+		"items": []
+	},
+	"DEAD END 1": {
+		"name": "Dead end",
+		"desc": "This is a Dead End, go back the way you came",
+		"exits": [{
+			"exit": "SOUTH",
+			"target": "CORRIDOR"
+		}],
+		"items": []
+	},
+	"CONTROL PANNEL": {
+		"name": "Control Pannel",
+		"desc": "This control pannel is split in two dicections.",
+		"exits": [{
+			"exit": "EAST",
+			"target": "BRIDGE"
+		}, {
+			"exit": "WEST",
+			"target": "CORRIDOR"
+		}],
+		"items": [
+            {
+                "item": "PAMPHLET",
+                "desc": "A mysterious pamphlet lays on the control pannel",
+				"take": "You take the panphlet of the control pannel"
+			}
+		]
+	},
+	"BRIDGE": {
+		"name": "The Citadel Tower Control bridge",
+		"desc": "This Bridge oversees the Scarif Base.",
+		"exits": [{
+			"exit": "NORTH",
+			"target": "TRASH COMPACTOR"
+		}, {
+			"exit": "EAST",
+			"target": "CONTROL PANNEL"
+		}, {
+			"exit": "SOUTH",
+			"target": "CORRIDOR"
+		}, {
+			"exit": "WEST",
+			"target": "DATA BASE"
+		}],
+		"items": []
+	},
+	"DATA BASE": {
+		"name": "Data Base",
+		"desc": "This is a dimly lit room filled with Emperial Data.",
+		"exits": [{
+			"exit": "NORTH",
+			"target": "HANGER"
+		}, {
+			"exit": "EAST",
+			"target": "BRIDGE"
+		}],
+		"items": [
+			{
+				"item": "DEATH STAR PLANS",
+				"desc": "The Blueprints to the Death Star are here",
+				"take": "You have aquired the plans"
+			}
+		]
+	},
+	"HANGER": {
+		"name": "HANGER",
+		"desc": "Large hanger with ships in it.",
+		"exits": [{
+			"exit": "EAST",
+			"target": "MILLENIUM FALCON"
+		}, {
+			"exit": "NORTH",
+			"target": "BRIDGE"
+		}],
+		"items": []
+	},
+	"MILLENIUM FALCON": {
+		"name": "Millenium Falcon",
+		"desc": "You have reached your ship and have escaped with the plans.",
+		"exits": [],
+		"items": []
+	}
+}

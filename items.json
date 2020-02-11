@@ -1,0 +1,16 @@
+{
+    "PAMPHLET": {
+       "exits": {},         
+       "actions": {
+          "READ": "The Death Star Plans are in the DATA BASE! Grab them, then get to your ship in the Hanger"
+       },
+       "points": 250
+    },
+    "DEATH STAR PLANS": {
+       "exits": {},
+         "actions": {
+            "DISPLAY": "The plans show the inner structures of the Death Star"
+    },
+    "points": 1000
+ }
+}
